@@ -1,5 +1,5 @@
 #!/bin/bash
-#@Auther goodbye-deepsea
+#@Auther goodbye-deepsea noodseek@iu
 Font_Black="\033[30m"
 Font_Red="\033[31m"
 Font_Green="\033[32m"
