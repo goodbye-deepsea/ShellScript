@@ -25,13 +25,13 @@ if [ -z "${host}" ]; then
     exit 1
 fi
 
-read -p "请输入端口号: (不输入默认22)" port
+read -p "请输入端口号(不输入默认22): " port
 if [ -z "${port}" ]; then
     port="22"
 fi
 
 # 让用户选择身份验证方式
-read -p "请选择凭证类型（使用密钥连接请输入pk,使用密码连接输入pwd,不输入直接退出！）: " auth_type
+read -p "请选择凭证类型(使用密钥连接请输入pk,使用密码连接输入pwd,不输入直接退出！): " auth_type
 
 if [ -z "${auth_type}" ]; then
     echo -e "${Font_Red}错误的认证凭据，正在退出！${Font_Suffix}"
