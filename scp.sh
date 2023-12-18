@@ -1,4 +1,5 @@
 #!/bin/bash
+#@Auther goodbye-deepsea
 Font_Black="\033[30m"
 Font_Red="\033[31m"
 Font_Green="\033[32m"
