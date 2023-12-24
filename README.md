@@ -1,2 +1,2 @@
-# ShellScpipt
+# ShellScript
 OpenSource ShellScript
