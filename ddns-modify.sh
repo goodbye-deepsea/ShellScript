@@ -1,20 +1,20 @@
 #! /bin/bash
 
 # 填写 Global API Key
-CFKEY=a7ef2520ee26e57a085d9a5c90755186db96d
+CFKEY=？
 
 # Username, eg: user@example.com
 # 填写 CloudFlare 登陆邮箱
-CFUSER=lovestrawberrymoon@gmail.com
+CFUSER=123@gmail.com
 
 # Zone name, eg: example.com
 # 填写需要用来 DDNS 的一级域名
-CFZONE_NAME=233338.xyz
+CFZONE_NAME=abc.xyz
 
 # Hostname to update, eg: homeserver.example.com
 # 填写 DDNS 的二级域名(只需填写前缀)
-CFRECORD_NAME_IPV6=hkt2-ipv6
-CFRECORD_NAME_IPV4=hkt2
+CFRECORD_NAME_IPV6=hkt-ipv6
+CFRECORD_NAME_IPV4=hkt
 
 # Cloudflare TTL for record, between 120 and 86400 seconds
 CFTTL=120
