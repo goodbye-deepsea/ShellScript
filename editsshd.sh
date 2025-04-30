@@ -1,5 +1,6 @@
 #!/bin/bash
 #disable PasswordAuthentication && ChallengeResponseAuthentication
+clear
 config_file="/etc/ssh/sshd_config"
 COLOR_RED="\033[31m"
 COLOR_GREEN="\033[32m"
