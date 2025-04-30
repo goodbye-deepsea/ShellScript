@@ -73,7 +73,7 @@ case $choice in
         fi
         curl -sSL https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh -m "$mode" -r "$test_type" -banup -ctype gb5
         ;;
-    9)
+    0)
         echo "退出程序! "
         exit 0
         ;;
