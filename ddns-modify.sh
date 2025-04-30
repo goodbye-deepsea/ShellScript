@@ -164,6 +164,8 @@ WAN_IPv4=$(curl -s -4 "${IPSITE}")
 if [[ -n "${CFRECORD_NAME_IPV6// /}" ]]; then
     update_dns_record "${CFRECORD_NAME_IPV6}" "aaaa" "${WAN_IPv6}"
 fi
-update_dns_record "${CFRECORD_NAME_IPV4}" "a" "${WAN_IPv4}"
+if [[ -n "${CFRECORD_NAME_IPV4// /}" ]]; then
+    update_dns_record "${CFRECORD_NAME_IPV4}" "a" "${WAN_IPv4}"
+fi
 
 
