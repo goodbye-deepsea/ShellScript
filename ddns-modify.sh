@@ -26,12 +26,12 @@ else
     echo
     read -p "输入CloudFlare 登陆邮箱（eg: mjj@gmail.com)：" CFUSER
     read -p "输入DDNS的一级域名（eg: mjj.com)：" CFZONE_NAME
-    read -p "输入需要DDNS ipv4的二级域名(只需填写前缀)（eg:hkt)：" CFRECORD_NAME_IPV4
+    read -p "输入需要DDNS ipv4的二级域名(只需填写前缀)（eg:hkt，不需要直接跳过)：" CFRECORD_NAME_IPV4
     read -p "输入需要DDNS ipv6的二级域名(只需填写前缀)(eg:hkt-ipv6，不需要直接跳过)：" CFRECORD_NAME_IPV6
     echo
 
-    if [ -z "$CFKEY" ] || [ -z "$CFUSER" ] || [ -z "$CFZONE_NAME" ] || [ -z "$CFRECORD_NAME_IPV4" ]; then
-        echo -e "${Font_Red}Error: Global API Key, CloudFlare login email, ddns domain for ipv4 are all required.${Font_Suffix}"
+    if [ -z "$CFKEY" ] || [ -z "$CFUSER" ] || { [ -z "$CFRECORD_NAME_IPV4" ] && [ -z "$CFRECORD_NAME_IPV6" ]; }; then
+        echo -e "${Font_Red}Error: 必须填写 Global API Key、CloudFlare 登陆邮箱，并且至少提供一个 DDNS 二级域名（IPv4 或 IPv6）。${Font_Suffix}"
         exit 1
     fi
 
